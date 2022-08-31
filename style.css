@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: ghostwhite;
+    height: 4rem;
+    line-height: 4rem;
+}
+nav .logo{
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-left: 8rem;
+}
+nav .logo span{
+    color: rgb(44, 112, 230);
+}
+nav ul{
+    text-transform: capitalize;
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 1.3rem;
+    color: gray;
+}
+
+.cart, .login{
+    width: 6rem;
+    height: 2.3rem;
+    background: transparent;
+    border-radius: 30px;
+    color: rgb(44, 112, 230);
+    font-weight: 600;
+    border: 2px solid rgb(44, 112, 230);
+}
+.login{
+    margin-right: 9rem;
+}
+header{
+    background-color: black;
+    color: white;
+    /* height: 100vh; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.header-parent{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+header img{
+    width: 60%;
+    position: relative;
+    left: 13rem;
+    margin-top: 6rem;
+}
+header h1{
+    font-size: 3.7rem;
+    width: 40%;
+    margin-left: 8rem;
+    margin-top: 13rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+}
+header p{
+    width: 60%;
+    margin-left: 8.2rem;
+    margin-top: 1.8rem;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.shop-now-btn, .see-more-btn{
+    width: 11rem;
+    height: 3rem;
+    border-radius: 40px;
+    background-color: rgb(10, 74, 185);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+.shop-now-btn{
+    margin-left: 8.3rem;
+}
+.see-more-btn{
+    margin-left: 3rem;
+}
+@media screen and (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+    .header-parent{
+        flex-direction: column-reverse;
+    }
+    nav{
+        z-index: 1;
+    }
+    nav .logo{
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: sans-serif;
+        margin-left: 1rem;
+    }
+    nav ul li, nav button{
+        display: none;
+    }
+    header img{
+        width: 100%;
+        left: 0;
+        /* text-align: center; */
+        margin-left: auto;
+        margin-right: auto;
+        /* display: block; */
+    }
+    header h1{
+        font-size: 3rem;
+        width: 80%;
+         margin-left: auto;
+        margin-right: auto;
+        display: block; 
+        margin-right: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+    header p{
+        width: 80%;
+        margin-top: 1.8rem;
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-left: 0rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+    }
+    .shop-now-btn{
+        margin-left: 1rem;
+    }
+    .see-more-btn{
+        margin-left: 0.4rem;
+        /* margin-right: 0.4rem; */
+    }
+    .shop-now-btn, .see-more-btn{
+        width: 70%;
+        height: 3.6rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 40px;
+        background-color: rgb(10, 74, 185);
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+}
