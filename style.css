@@ -2,19 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     font-family: sans-serif;
     overflow-x: hidden;
+    
+    /* background-color: rgb(231, 231, 238); */
 }
 nav{
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 .nav-container{
     display: flex;
     justify-content: space-between;
-    background-color: ghostwhite;
+    background-color: white;
     height: 4rem;
     line-height: 4rem;
 }
@@ -36,7 +43,10 @@ nav ul li{
     padding: 0 1.3rem;
     color: gray;
 }
-
+nav a{
+    text-decoration: none;
+    color: gray;
+}
 .cart, .login{
     width: 6rem;
     height: 2.3rem;
@@ -52,7 +62,7 @@ nav ul li{
 header{
     background-color: black;
     color: white;
-    /* height: 100vh; */
+    height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
@@ -62,9 +72,9 @@ header{
     /* align-items: center; */
 }
 header img{
-    width: 60%;
+    width: 75%;
     position: relative;
-    left: 13rem;
+    left: 7rem;
     margin-top: 6rem;
 }
 header h1{
@@ -72,17 +82,18 @@ header h1{
     width: 40%;
     margin-left: 8rem;
     margin-top: 13rem;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1;
     text-align: left;
 }
 header p{
-    width: 60%;
+    width: 70%;
     margin-left: 8.2rem;
     margin-top: 1.8rem;
     line-height: 1.5;
     text-align: left;
     font-size: 1.2rem;
+    letter-spacing: 2;
 }
 .shop-now-btn, .see-more-btn{
     width: 11rem;
@@ -94,12 +105,82 @@ header p{
     text-transform: uppercase;
     font-size: 0.9rem;
     margin-top: 2rem;
+    /* margin-bottom: 16rem; */
 }
 .shop-now-btn{
     margin-left: 8.3rem;
 }
 .see-more-btn{
     margin-left: 3rem;
+}
+.product-highlights-containeer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-highlights-containeer img{
+    width: 50%;
+    margin-right: 3rem;
+}
+.product-highlights-containeer p{
+    width: 70%;
+    line-height: 1.3;
+    color: rgb(70, 69, 69);
+    /* margin-left: 20rem; */
+}
+.sports, .battery, .gps, .light{
+    margin-bottom: 1.5rem;
+}
+.sports, .battery, .notification{
+    margin-left: 6rem;
+}
+.product-highlights h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.features-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.features-container p{
+    width: 10rem;
+}
+.features-container img{
+    width: 40%;
+}
+.features-container ul{
+    width: 30%;
+    text-transform: capitalize;
+    line-height: 2.1;
+    font-size: 1.3rem;
+}
+.features{
+    margin-top: 7rem;
+}
+.features h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.product-1, .product-2, .product-3{
+    width: 16rem;
+    height: 16rem;
+    background-color: rgba(244, 244, 251, 0.912);
+    border: 2px solid rgb(78, 187, 255);
+    border-radius: 40px;
 }
 @media screen and (max-width:600px){
     body{
@@ -120,6 +201,9 @@ header p{
     nav ul li, nav button{
         display: none;
     }
+    header{
+        height: inherit;
+    }
     header img{
         width: 100%;
         left: 0;
@@ -131,6 +215,7 @@ header p{
     header h1{
         font-size: 3rem;
         width: 80%;
+        font-weight: 700;
          margin-left: auto;
         margin-right: auto;
         display: block; 
@@ -156,11 +241,11 @@ header p{
     }
     .see-more-btn{
         margin-left: 0.4rem;
+        margin-bottom: 2rem;
         /* margin-right: 0.4rem; */
     }
     .shop-now-btn, .see-more-btn{
-        width: 70%;
-        height: 3.6rem;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -172,4 +257,62 @@ header p{
         font-size: 0.9rem;
         margin-top: 2rem;
     }
+    .product-highlights{
+        margin-top: 2rem;
+    }
+    .product-highlights-containeer{
+        flex-direction: column;
+    }
+    .product-highlights-containeer img{
+        width: 80%;
+    }
+    .product-highlights-containeer p{
+        width: 90%;
+        margin-left: 1.5rem;
+    }
+    .notification{
+        margin-bottom: 2rem;
+    }
+    .gps{
+        margin-top: 2rem;
+    }
+    .sports, .battery{
+        margin-bottom: 1rem;
+    }
+    .features-container{
+        flex-direction: column-reverse;
+        justify-content: inherit;
+        align-items: inherit;
+        gap: 3rem;
+    }
+    .features-container p{
+        width: 10rem;
+    }
+    .features-container img{
+        width: 90%;
+    }
+    .features-container ul{
+        width: 80%;
+        text-transform: capitalize;
+        line-height: 2.3;
+        font-size: 1.1rem;
+        margin-left: 3rem;
+    }
+    .features{
+        margin-top: 7rem;
+    }
+    .features h3{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .product-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    
 }
