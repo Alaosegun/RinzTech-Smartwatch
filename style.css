@@ -17,10 +17,10 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 1;
-    animation: movedown 1s linear 1;
+    /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 2s;
-    visibility: hidden;
+    visibility: hidden; */
 }
 .nav-container{
     display: flex;
@@ -34,10 +34,10 @@ nav .logo{
     font-weight: 700;
     font-family: sans-serif;
     margin-left: 8rem;
-    animation: movedown 1s linear 1;
+    /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 1s;
-    visibility: hidden;
+    visibility: hidden; */
 }
 @keyframes movedown{
     0%{
@@ -61,10 +61,10 @@ nav ul li{
     display: inline-block;
     padding: 0 1.3rem;
     color: gray;
-    animation: movedown 1s linear 1;
+    /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 3s;
-    visibility: hidden;
+    visibility: hidden; */
 }
 nav a{
     text-decoration: none;
@@ -78,10 +78,10 @@ nav a{
     color: rgb(44, 112, 230);
     font-weight: 600;
     border: 2px solid rgb(44, 112, 230);
-    animation: movedown 1s linear 1;
+    /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 4s;
-    visibility: hidden;
+    visibility: hidden; */
 }
 .login{
     margin-right: 9rem;
@@ -103,10 +103,10 @@ header img{
     position: relative;
     left: 7rem;
     margin-top: 6rem;
-    animation: zoomin 1s linear 1;
+    /* animation: zoomin 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 5s;
-    visibility: hidden;
+    visibility: hidden; */
 }
 @keyframes zoomin{
     0%{
@@ -126,10 +126,10 @@ header h1{
     font-weight: 600;
     line-height: 1;
     text-align: left;
-    animation: moveright 1s linear 1;
+    /* animation: moveright 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 4s;
-    visibility: hidden;
+    visibility: hidden; */
 }
 
 header p{
@@ -140,10 +140,10 @@ header p{
     text-align: left;
     font-size: 1.2rem;
     letter-spacing: 2;
-    animation: moveright 1s linear 1;
+    /* animation: moveright 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 4s;
-    visibility: hidden;
+    visibility: hidden; */
 }
 @keyframes moveright{
     0%{
@@ -166,10 +166,10 @@ header p{
     font-size: 0.9rem;
     margin-top: 2rem;
     /* margin-bottom: 16rem; */
-    animation: moveup 1s linear 1;
+    /* animation: moveup 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 6s;
-    visibility: hidden;
+    visibility: hidden; */
 }
 @keyframes moveup{
     0%{
@@ -453,10 +453,10 @@ font-weight: 560;
         margin-top: 1rem;
         font-weight: 400;
         line-height: 1;
-        animation: zoomin 1s linear 1;
+        /* animation: zoomin 1s linear 1;
         animation-fill-mode: forwards;
         animation-delay: 5.5s;
-        visibility: hidden;
+        visibility: hidden; */
     }
     header p{
         width: 80%;
