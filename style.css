@@ -234,6 +234,29 @@ header p{
     margin-top: 1rem;
     cursor: pointer;
 }
+.bi-pc-display, .bi-battery-full, .bi-bell-fill, .bi-compass-fill, .bi-lightning-charge-fill, .bi-compass-fill{
+    font-size: 1.5rem;
+}
+.products{
+    margin-top: 10rem;
+}
+.products h3{
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.comparison-parent .comparison-child{
+    /* display: flex; */
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+.comparsion-parent span{
+    margin: 1rem;
+    border-collapse: collapse;
+}
 @media screen and (max-width:600px){
     body{
         overflow-x: hidden;
@@ -288,6 +311,14 @@ header p{
         display: block;
         text-align: center;
     }
+    .product-highlights h3{
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 300;
+    }
     .shop-now-btn{
         margin-left: 1rem;
     }
@@ -310,7 +341,7 @@ header p{
         margin-top: 2rem;
     }
     .product-highlights{
-        margin-top: 2rem;
+        margin-top: 0.2rem;
     }
     .product-highlights-containeer{
         flex-direction: column;
@@ -405,4 +436,15 @@ header p{
       
     
 }
+.products{
+    margin-top: 5rem;
+}
+.products h3{
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
 }
