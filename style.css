@@ -257,6 +257,84 @@ header p{
     margin: 1rem;
     border-collapse: collapse;
 }
+footer{
+    background-color: rgb(146, 210, 250);
+    padding: 4rem;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: initial;
+}
+footer ul{
+    line-height: 2.2;
+    text-transform: capitalize;
+    list-style: none;
+}
+footer ul li{
+    font-size: 1rem;
+    color: rgb(36, 36, 36);
+}
+.footer-socials{
+    font-size: 1.4rem;
+    color: rgb(44, 112, 230);
+}
+.footer-socials h3{
+    font-size: 1.4rem;
+    color: rgb(62, 62, 62);
+    margin-bottom: 2rem;
+}
+footer .bi-facebook, .bi-linkedin, .bi-twitter, .bi-youtube, .bi-google{
+    border: 2px solid rgb(44, 112, 230);
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+}
+footer h3{
+    color: rgb(62, 62, 62);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+footer a.mail-adress{
+text-decoration: none;
+color: rgb(44, 112, 230);
+font-weight: 560;
+}
+.bi-geo-alt-fill, .bi-telephone-fill, .bi-whatsapp, .bi-envelope-fill{
+    font-size: 1.4rem;
+}
+#email-input{
+    width: 14.7rem;
+    height: 3rem;
+    border: 2px solid rgb(44, 112, 230);
+    border-radius: 40px 0 0 40px;
+    margin-top: 1.3rem;
+}
+.footer-submit-btn{
+    border-radius: 0px 40px 40px 0;
+    width: 7.4rem;
+    height: 3rem;
+    border: 2px solid rgb(44, 112, 230);
+    background-color: transparent;
+    color: rgb(44, 112, 230);
+    font-size: 1.1rem;
+    position: relative;
+    right: 0.3rem;
+    top: 0.1rem;
+    font-weight: 500;
+}
+.footer-newsletter p{
+    font-size: 1.1rem;
+}
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 1.5rem;
+    font-size: 0.8rem;
+}
+.copyright p{
+    line-height: 1.5rem;
+}
 @media screen and (max-width:600px){
     body{
         overflow-x: hidden;
@@ -446,5 +524,61 @@ header p{
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
-
+.footer-container{
+   flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+footer ul {
+    margin-bottom: 2rem;
+    font-size: 0.6rem;
+}
+.footer-newsletter{
+    margin-top: 2rem;
+}
+footer .bi-facebook, .bi-linkedin, .bi-twitter, .bi-youtube, .bi-google{
+    border: 2px solid rgb(44, 112, 230);
+    padding: 0.3rem 0.3rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+footer h3{
+    color: rgb(62, 62, 62);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+.footer-socials h3{
+    font-size: 1.2rem;
+    color: rgb(62, 62, 62);
+    margin-bottom: 0.5rem;
+}
+#email-input{
+    width: 70%;
+    height: 2rem;
+    border: 2px solid rgb(44, 112, 230);
+    border-radius: 40px 0 0 40px;
+    margin-top: 1.4rem;
+    position: relative;
+    top: 0.23rem;
+}
+.footer-submit-btn{
+    border-radius: 0px 40px 40px 0;
+    width: 27%;
+    height: 2rem;
+    border: 2px solid rgb(44, 112, 230);
+    background-color: transparent;
+    color: rgb(44, 112, 230);
+    font-size: 0.4rem;
+    position: relative;
+    right: 0.3rem;
+    bottom: 4rem;
+    font-weight: 500;
+}
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 1.5rem;
+    font-size: 0.6rem;
+}
 }
