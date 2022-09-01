@@ -363,6 +363,15 @@ footer .bi-facebook, .bi-linkedin, .bi-twitter, .bi-youtube, .bi-google{
     padding: 0.5rem 0.5rem;
     border-radius: 10px;
 }
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem ;
+}
+.icons p{
+    margin-top: 0.8rem;
+}
 footer h3{
     color: rgb(62, 62, 62);
     margin-bottom: 1rem;
@@ -419,6 +428,7 @@ font-weight: 560;
     }
     nav{
         z-index: 1;
+        position: fixed;
     }
     nav .logo{
         font-size: 1.5rem;
@@ -612,6 +622,7 @@ font-weight: 560;
 footer ul {
     margin-bottom: 2rem;
     font-size: 0.6rem;
+    font-weight: 500;
 }
 .footer-newsletter{
     margin-top: 2rem;
@@ -621,16 +632,31 @@ footer .bi-facebook, .bi-linkedin, .bi-twitter, .bi-youtube, .bi-google{
     padding: 0.3rem 0.3rem;
     border-radius: 10px;
     font-size: 0.9rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 footer h3{
     color: rgb(62, 62, 62);
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem ;
+}
+.icons p{
+    margin-top: 0.8rem;
+}
+.contact ul li{
+    line-height: 3;
 }
 .footer-socials h3{
     font-size: 1.2rem;
     color: rgb(62, 62, 62);
     margin-bottom: 0.5rem;
+    display: block;
 }
 #email-input{
     width: 70%;
