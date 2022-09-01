@@ -34,7 +34,8 @@ nav .logo{
     font-size: 1.7rem;
     font-weight: 700;
     font-family: sans-serif;
-    margin-right: 3rem;
+    /* margin-right: 4rem; */
+    margin-left: 8rem;
         /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 1s;
@@ -731,4 +732,15 @@ footer h3{
 .quick-links ul{
     line-height: 3.5rem;
 }
+}
+@media screen and (max-width: 952px){
+    nav .logo{
+        font-size: 1.7rem;
+        font-weight: 700;
+        font-family: sans-serif;
+        /* margin-right: 4rem; */
+        margin-left: 1rem;
+        
+}
+
 }
