@@ -29,12 +29,13 @@ nav{
     height: 4rem;
     line-height: 4rem;
 }
+
 nav .logo{
     font-size: 1.7rem;
     font-weight: 700;
     font-family: sans-serif;
-    margin-left: 8rem;
-    /* animation: movedown 1s linear 1;
+    margin-right: 3rem;
+        /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 1s;
     visibility: hidden; */
@@ -56,6 +57,10 @@ nav ul{
     text-transform: capitalize;
     
     
+}
+nav ul li a:hover{
+  color: black;
+  transition: .4s all ease-in;
 }
 nav ul li{
     display: inline-block;
@@ -86,6 +91,9 @@ nav a{
 .login{
     margin-right: 9rem;
 }
+.bi-card-checklist{
+    font-size: 1.2rem;
+}
 header{
     background-color: black;
     color: white;
@@ -105,7 +113,7 @@ header img{
     margin-top: 6rem;
     /* animation: zoomin 1s linear 1;
     animation-fill-mode: forwards;
-    animation-delay: 5s;
+    animation-delay: 3ms;
     visibility: hidden; */
 }
 @keyframes zoomin{
@@ -319,6 +327,7 @@ header p{
     margin-top: 3rem;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 5rem;
     text-transform: uppercase;
 }
 .comparison-parent .comparison-child{
@@ -371,6 +380,10 @@ footer .bi-facebook, .bi-linkedin, .bi-twitter, .bi-youtube, .bi-google{
 }
 .icons p{
     margin-top: 0.8rem;
+}
+footer a{
+    text-decoration: none;
+    color: initial;
 }
 footer h3{
     color: rgb(62, 62, 62);
@@ -426,6 +439,26 @@ font-weight: 560;
     .header-parent{
         flex-direction: column-reverse;
     }
+    
+.checkbtn{
+    display: inline;
+     color: black;
+     margin-right: 0rem;
+     height: 0;
+     line-height: 5rem;
+     
+ }
+ nav .bi-list{
+ display: inline
+}
+.nav-container{
+    justify-content: space-between;
+}
+ .menu-bar-container{
+     flex-direction: row-reverse;
+     display: flex;
+     justify-content: space-between;
+ }
     nav{
         z-index: 1;
         position: fixed;
@@ -435,6 +468,7 @@ font-weight: 560;
         font-weight: 700;
         font-family: sans-serif;
         margin-left: 1rem;
+        margin-right: 0;
     }
     nav ul li, nav button{
         display: none;
@@ -538,6 +572,7 @@ font-weight: 560;
     }
     .features-container p{
         width: 10rem;
+        
     }
     .features-container img{
         width: 90%;
@@ -558,6 +593,7 @@ font-weight: 560;
         margin-top: 1rem;
         width: 100%;
         margin-bottom: 2rem;
+        margin-top: 4rem;
     }
     .product-container{
         flex-direction: column;
@@ -612,6 +648,7 @@ font-weight: 560;
     margin-top: 3rem;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 5rem;
     text-transform: uppercase;
 }
 .footer-container{
@@ -624,6 +661,7 @@ footer ul {
     font-size: 0.6rem;
     font-weight: 500;
 }
+
 .footer-newsletter{
     margin-top: 2rem;
 }
@@ -680,11 +718,17 @@ footer h3{
     bottom: 4rem;
     font-weight: 500;
 }
+#contact h3{
+    margin-top: 3rem;
+}
 .copyright{
     background-color: black;
     color: white;
     text-align: center;
     height: 1.5rem;
     font-size: 0.6rem;
+}
+.quick-links ul{
+    line-height: 3.5rem;
 }
 }

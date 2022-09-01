@@ -11,13 +11,20 @@
 <body>
 <nav data-aos="fade-down">
     <div class="nav-container">
+    <!-- <div> <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <p>  <i class="bi bi-list"></i> </p>
+        </label></div> -->
         <div><label for="" class="logo"  data-aos="fade-right"><i class="bi bi-cpu-fill"></i> Rinz<span>Tech</span></label></div>
+
         <div>
             <ul data-aos="fade-down">
                 <li> <a href="#"> <i class="bi bi-house-fill"></i> Home</a></li>
+                <li><a href="#highlights"><i class="bi bi-card-checklist"></i> Highlights</a> </li>
                 <li><a href="#features"><i class="bi bi-body-text"></i> features</a></li>
                 <li><a href="#products"><i class="bi bi-tags-fill"></i> product</a></li>
-                <li><i class="bi bi-person-lines-fill"></i> contact us</li>
+                <li><a href="#contact"> <i class="bi bi-person-lines-fill"></i> contact us</a></li>
+               
             </ul>
         </div>
         <div>
@@ -41,7 +48,7 @@
 
 </header>
 
-<section class="product-highlights" >
+<section class="product-highlights" id="highlights" >
     <br>
     <h3 data-aos="fade-down">products highlights</h3>
     <div class="product-highlights-containeer">
@@ -81,6 +88,7 @@
 </section>
 
 <section class="products" id="products">
+    <br>
     <h3 data-aos="zoom-in">Products</h3>
 <div class="product-container">
     <div class="product-1">
@@ -156,16 +164,18 @@
 
 <footer>
     <div class="footer-container">
-        <div class="footer-child">
+        <div class="quick-links">
             <h3  data-aos="fade-down">Links</h3>
             <ul>
-                <li  data-aos="fade-left">Home</li>
-                <li data-aos="fade-right">features</li>
-                <li data-aos="fade-left">products</li>
-                <li data-aos="fade-right">contact</li>
+                <li  data-aos="fade-left"><a href="#">Home</a></li>
+                <li data-aos="fade-right"><a href="#features">features</a></li>
+                <li data-aos="fade-left"><a href="#products"> products</a></li>
+                <li data-aos="fade-right"><a href="#contact">contact</a> </li>
+                <li data-aos="fade-right"><a href="#contact">Highlights</a> </li>
             </ul>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
+            <br>
             <h3 data-aos="fade-down">Contact Address</h3>
             <ul>
                 <li data-aos="fade-left"><i class="bi bi-geo-alt-fill"></i>  :121,clear water bay road clear water bay, kogi Nigeria</li>
