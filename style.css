@@ -409,6 +409,7 @@ font-weight: 560;
 .copyright p{
     line-height: 1.5rem;
 }
+
 @media screen and (max-width:600px){
     body{
         overflow-x: hidden;
