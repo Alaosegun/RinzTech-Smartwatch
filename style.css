@@ -479,7 +479,7 @@ figure{
     position: relative;
     left: 0;
     width: 400%;
-    animation: 60s slide infinite;
+    animation: 20s slide infinite;
 }
 @keyframes slide{
     0%{
@@ -892,7 +892,7 @@ nav ul{
     margin-left: 1rem;
     letter-spacing: 3;
     position: relative;
-    bottom:2rem
+    bottom: 1rem
 }
 .customer-container h6{
     position: relative;
@@ -908,8 +908,8 @@ nav ul{
 .customer-pic{
     width: 40%;
     position: relative;
-    top: 2rem;
-    margin-bottom: 2rem;
+    top: 4rem;
+    margin-bottom: 2.5rem;
 }
 .customer-container{
     margin-top: 0rem;
