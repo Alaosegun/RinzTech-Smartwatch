@@ -25,6 +25,12 @@ nav{
     animation-delay: 2s;
     visibility: hidden; */
 }
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+}
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -91,6 +97,12 @@ nav a{
     animation-fill-mode: forwards;
     animation-delay: 4s;
     visibility: hidden; */
+}
+.cart:hover, .login:hover{
+    background-color: rgb(44, 112, 230);
+    color: white;
+    transition: all ease-in .5s;
+    cursor: pointer;
 }
 .login{
     margin-right: 9rem;
@@ -560,12 +572,10 @@ figure{
         position: fixed;
     }
     nav .logo{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 700;
         font-family: sans-serif;
-        margin-left: 0;
-        
-        justify-content: space-between;
+        margin-left: 0.6rem;
       
     }
     nav ul li, nav button{
@@ -583,6 +593,7 @@ figure{
         /* display: block; */
         
     }
+   
     header h1{
         font-size: 3rem;
         width: 80%;
@@ -835,49 +846,53 @@ footer h3{
 
 
 .checkbtn{
-    display: inline;
+    display: block;
      color: black;
-     margin-left: 9rem;
+     margin-left: 36%;
      height: 0;
-     line-height: 5rem;
+     float: right;
+     margin-top: 0.7rem;
      
+ }
+ .bi-list{
+    width: 1.8rem;
  }
  .nav-container{
     display: flex;
      flex-direction: row;
      justify-content: space-between;
  }
-nav ul{
-     position: fixed;
-     width: 100%;
-     height: 100vh;
-     background: white;
-     top: 0rem;
-     top: 100%;
-    margin-right: 0;
-     margin-top: 4.2rem;
-     transition: ease-in .5s;
-     flex-direction: column;
- 
- }
- nav ul li{
-     display: block;
-     margin: 4%;
-     right: 0rem;
-     position: relative;
-     line-height: 0.8rem;
-     text-transform: uppercase;
- }
+ .nav-container ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 2.7rem;
+    left: 100%;
+    text-align: center;
+    transition: all .5s;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+nav ul li{
+    display: block;
+    margin: 3.75rem 0;
+    padding: 0;
+    margin-top: 5.2rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+}
  nav ul li a{
-     font-size: 2rem;
-     color: white;
+     font-size: 1rem;
+     color: black;
  }
  a:hover,a.active{
      background: none;
      color: gray;
  }
  #check:checked~ ul {
-     top: 0;
+     left: 0;
  }
 
 .customer-child1{
@@ -936,14 +951,3 @@ nav ul{
 
 
 
-@media screen and (max-width: 952px){
-    nav .logo{
-        font-size: 1.7rem;
-        font-weight: 700;
-        font-family: sans-serif;
-        /* margin-right: 4rem; */
-        margin-left: 1rem;
-        
-}
-
-}
