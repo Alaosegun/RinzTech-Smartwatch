@@ -34,8 +34,8 @@ nav .logo{
     font-size: 1.7rem;
     font-weight: 700;
     font-family: sans-serif;
-    /* margin-right: 4rem; */
     margin-left: 8rem;
+    /* margin-right: 4rem; */
         /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 1s;
@@ -432,34 +432,47 @@ font-weight: 560;
 .copyright p{
     line-height: 1.5rem;
 }
-
+.customer-child1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.customer-child1 p{
+    width: 50%;
+    letter-spacing: 3;
+}
+.customer-container h6{
+    position: relative;
+    left: 57rem;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    margin-top: 0.7rem;
+    font-weight: 500;
+}
+.quote1, .quote2{
+    width: 2%;
+}
+.customer-pic{
+    width: 12%;
+    border-radius: 50%;
+    border: 7px solid rgb(237, 237, 246);
+}
+.customer-container{
+    margin-top: 8rem;
+}
 @media screen and (max-width:600px){
-    body{
+    body, html{
         overflow-x: hidden;
+        width: 100%;
     }
     .header-parent{
         flex-direction: column-reverse;
     }
     
-.checkbtn{
-    display: inline;
-     color: black;
-     margin-right: 0rem;
-     height: 0;
-     line-height: 5rem;
-     
- }
  nav .bi-list{
  display: inline
 }
-.nav-container{
-    justify-content: space-between;
-}
- .menu-bar-container{
-     flex-direction: row-reverse;
-     display: flex;
-     justify-content: space-between;
- }
     nav{
         z-index: 1;
         position: fixed;
@@ -468,8 +481,10 @@ font-weight: 560;
         font-size: 1.5rem;
         font-weight: 700;
         font-family: sans-serif;
-        margin-left: 1rem;
-        margin-right: 0;
+        margin-left: 0;
+        
+        justify-content: space-between;
+      
     }
     nav ul li, nav button{
         display: none;
@@ -517,7 +532,7 @@ font-weight: 560;
     .product-highlights h3{
         text-transform: uppercase;
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-bottom: 2rem;
         font-size: 2rem;
         font-weight: 300;
@@ -732,7 +747,91 @@ footer h3{
 .quick-links ul{
     line-height: 3.5rem;
 }
+
+
+.checkbtn{
+    display: inline;
+     color: black;
+     margin-left: 9rem;
+     height: 0;
+     line-height: 5rem;
+     
+ }
+ .nav-container{
+    display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+nav ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: white;
+     top: 0rem;
+     top: 100%;
+    margin-right: 0;
+     margin-top: 4.2rem;
+     transition: ease-in .5s;
+     flex-direction: column;
+ 
+ }
+ nav ul li{
+     display: block;
+     margin: 4%;
+     right: 0rem;
+     position: relative;
+     line-height: 0.8rem;
+     text-transform: uppercase;
+ }
+ nav ul li a{
+     font-size: 2rem;
+     color: white;
+ }
+ a:hover,a.active{
+     background: none;
+     color: gray;
+ }
+ #check:checked~ ul {
+     top: 0;
+ }
+
+.customer-child1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
+.customer-child1 p{
+    width: 90%;
+    margin-left: 1rem;
+    letter-spacing: 3;
+}
+.customer-container h6{
+    position: relative;
+    left: 6rem;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    margin-top: 0.7rem;
+    font-weight: 500;
+}
+.quote1, .quote2{
+    width: 4%;
+}
+.customer-pic{
+    width: 50%;
+    position: relative;
+    top: 3rem;
+}
+.customer-container{
+    margin-top: 3rem;
+}
+ } 
+
+
+
+
+
 @media screen and (max-width: 952px){
     nav .logo{
         font-size: 1.7rem;
