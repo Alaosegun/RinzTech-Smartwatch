@@ -33,7 +33,7 @@ nav{
 }
 .nav-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: white;
     height: 4rem;
     line-height: 4rem;
@@ -43,7 +43,7 @@ nav .logo{
     font-size: 1.7rem;
     font-weight: 700;
     font-family: sans-serif;
-    margin-left: 8rem;
+    margin-left: 3rem;
     /* margin-right: 4rem; */
         /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
@@ -575,7 +575,7 @@ figure{
         font-size: 1.4rem;
         font-weight: 700;
         font-family: sans-serif;
-        margin-left: 0.6rem;
+        margin-left: 0.7rem;
       
     }
     nav ul li, nav button{
@@ -740,10 +740,12 @@ figure{
         font-size: 0.8rem;
     }
     .product-1 p, .product-2  p, .product-3 p{
-        text-align: left;
-        width: 90%;
+        text-align: center;
+        width: 100%;
         margin-top: 1rem;
-        margin-left: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
         font-size: 1.1rem;
         line-height: 1.4;
       
@@ -809,26 +811,34 @@ footer h3{
     display: block;
 }
 #email-input{
-    width: 70%;
+    width: 95%;
     height: 2rem;
     border: 2px solid rgb(44, 112, 230);
-    border-radius: 40px 0 0 40px;
+    border-radius: 6px ;
     margin-top: 1.4rem;
     position: relative;
-    top: 0.23rem;
+    top: 0.1rem;
 }
 .footer-submit-btn{
-    border-radius: 0px 40px 40px 0;
-    width: 27%;
+    border-radius: 0px ;
+    width: 45%;
     height: 2rem;
     border: 2px solid rgb(44, 112, 230);
     background-color: transparent;
     color: rgb(44, 112, 230);
-    font-size: 0.4rem;
+    font-size: 0.8rem;
     position: relative;
     right: 0.3rem;
-    bottom: 4rem;
-    font-weight: 500;
+    bottom: 0rem;
+    font-weight: 600;
+    margin-top: 0.6rem;
+    cursor: pointer;
+}
+.footer-submit-btn:hover{
+    background-color: rgb(10, 74, 185);
+    color: white;
+    transition: all .4s ease-in;
+    
 }
 #contact h3{
     margin-top: 3rem;
@@ -851,7 +861,7 @@ footer h3{
      margin-left: 36%;
      height: 0;
      float: right;
-     margin-top: 0.7rem;
+     margin-top: 0.9rem;
      
  }
  .bi-list{
@@ -908,11 +918,12 @@ nav ul li{
     margin-left: 0.8rem;
     letter-spacing: 3;
     position: relative;
-    bottom: 1rem
+    bottom: 3rem
 }
 .customer-container h6{
     position: relative;
     left: 6rem;
+    bottom: 3rem;
     font-size: 1.4rem;
     margin-bottom: 3rem;
     margin-top: 0;
@@ -945,6 +956,9 @@ nav ul li{
 }
 .customer-container h6{
     margin-bottom: 5rem;
+}
+.footer-newsletter .bi-arrow-right{
+    display: none;
 }
  } 
 
