@@ -550,7 +550,6 @@ figure{
     position: relative;
     width: 25%;
     float: left;
-    height: 100%;
 
 }
 .slide h1{
@@ -878,6 +877,7 @@ footer h3{
      height: 0;
      float: right;
      margin-top: 0.9rem;
+     cursor: pointer;
      
  }
  .bi-list{
