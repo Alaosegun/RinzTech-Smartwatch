@@ -636,6 +636,7 @@ figure{
     .shop-now-btn:hover, .see-more-btn:hover{
         background-color: rgb(6, 49, 124);
         transition: all .4s ease-in-out;
+    
     }
     .product-highlights h3{
         text-transform: uppercase;
