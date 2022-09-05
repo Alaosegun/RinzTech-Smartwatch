@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    outline: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -93,13 +94,14 @@ nav a{
     color: rgb(44, 112, 230);
     font-weight: 600;
     border: 2px solid rgb(44, 112, 230);
+    cursor: pointer;
     /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 4s;
     visibility: hidden; */
 }
 .cart:hover, .login:hover{
-    background-color: rgb(44, 112, 230);
+    background-color: rgb(0, 42, 113);
     color: white;
     transition: all ease-in .5s;
     cursor: pointer;
