@@ -95,6 +95,7 @@ nav a{
     font-weight: 600;
     border: 2px solid rgb(44, 112, 230);
     cursor: pointer;
+   
     /* animation: movedown 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 4s;
@@ -105,6 +106,7 @@ nav a{
     color: white;
     transition: all ease-in .5s;
     cursor: pointer;
+  
 }
 .login{
     margin-right: 9rem;
@@ -191,11 +193,16 @@ header p{
     text-transform: uppercase;
     font-size: 0.9rem;
     margin-top: 2rem;
+    cursor: pointer;
     /* margin-bottom: 16rem; */
     /* animation: moveup 1s linear 1;
     animation-fill-mode: forwards;
     animation-delay: 6s;
     visibility: hidden; */
+}
+.shop-now-btn:hover, .see-more-btn:hover{
+    background-color: rgb(6, 49, 124);
+    transition: all .4s ease-in-out;
 }
 @keyframes moveup{
     0%{
@@ -625,6 +632,10 @@ figure{
         margin-right: auto;
         display: block;
         text-align: center;
+    }
+    .shop-now-btn:hover, .see-more-btn:hover{
+        background-color: rgb(6, 49, 124);
+        transition: all .4s ease-in-out;
     }
     .product-highlights h3{
         text-transform: uppercase;
