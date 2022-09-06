@@ -563,6 +563,426 @@ figure{
     /* width: 100%;
     height: 500px ; */
 }
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape){
+    html{
+        overflow-x: hidden;
+      width: 100%;
+      height: 100%;
+   }
+   body{}
+   .header-parent{
+       flex-direction: column-reverse;
+   }
+   
+nav .bi-list{
+display: inline
+}
+   nav{
+       z-index: 1;
+       position: fixed;
+   }
+   nav .logo{
+       font-size: 1.4rem;
+       font-weight: 700;
+       font-family: sans-serif;
+       margin-left: 0.7rem;
+     
+   }
+   nav ul li, nav button{
+       display: none;
+   }
+   header{
+       height: initial;
+   }
+   header img{
+       width: 50%;
+       left: 0;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+
+       
+   }
+  
+   header h1{
+       font-size: 3rem;
+       width: 80%;
+       font-weight: 700;
+        margin-left: auto;
+       margin-right: auto;
+       display: block; 
+       margin-right: 2rem;
+       text-align: center;
+       margin-top: 1rem;
+       font-weight: 400;
+       line-height: 1;
+       /* animation: zoomin 1s linear 1;
+       animation-fill-mode: forwards;
+       animation-delay: 5.5s;
+       visibility: hidden; */
+   }
+   header p{
+       width: 70%;
+       margin-top: 1.8rem;
+       line-height: 1.5;
+       font-size: 1rem;
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+       text-align: center;
+   }
+   .shop-now-btn:hover, .see-more-btn:hover{
+       background-color: rgb(6, 49, 124);
+       transition: all .4s ease-in-out;
+   
+   }
+   .product-highlights h3{
+       text-transform: uppercase;
+       text-align: center;
+       margin-top: 4rem;
+       margin-bottom: 2rem;
+       font-size: 2rem;
+       font-weight: 300;
+   }
+   .shop-now-btn{
+       margin-left: 1rem;
+   }
+   .see-more-btn{
+       margin-left: 0.4rem;
+       margin-bottom: 2rem;
+       /* margin-right: 0.4rem; */
+   }
+   .shop-now-btn, .see-more-btn{
+       width: 30%;
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+       border-radius: 40px;
+       background-color: rgb(10, 74, 185);
+       border: none;
+       color: white;
+       text-transform: uppercase;
+       font-size: 1rem;
+       margin-top: 2rem;
+   }
+   .product-highlights{
+       margin-top: 0.2rem;
+   }
+   .product-highlights-containeer{
+       flex-direction: column;
+   }
+   .product-highlights-containeer img{
+       width: 80%;
+   }
+   .product-highlights-containeer p{
+       width: 90%;
+       margin-left: 1.5rem;
+   }
+   .notification{
+       margin-bottom: 2rem;
+   }
+   .gps{
+       margin-top: 2rem;
+   }
+   .sports, .battery{
+       margin-bottom: 1rem;
+   }
+   .features-container{
+       flex-direction: column-reverse;
+       justify-content: inherit;
+       align-items: inherit;
+       gap: 3rem;
+   }
+   .features-container p{
+       width: 10rem;
+       
+   }
+   .features-container img{
+       width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+   }
+   .features-container ul{
+       width: 80%;
+       text-transform: capitalize;
+       line-height: 2.3;
+       font-size: 1.1rem;
+       margin-left: 3rem;
+   }
+   .features{
+       margin-top: 7rem;
+   }
+   .features h3{
+       text-align: center;
+       font-size: 2rem;
+       margin-top: 1rem;
+       width: 100%;
+       margin-bottom: 2rem;
+       margin-top: 4rem;
+   }
+   .product-container{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 0rem;
+   }
+   .product-1, .product-2, .product-3{
+       width: 50%;
+       height: inherit;
+       background-color: rgba(244, 244, 251, 0.912);
+       border: 3px solid rgb(78, 187, 255);
+       border-radius: 40px;
+       text-align: center;
+       margin-bottom: 3rem;
+   }
+   .inside-product-flex{
+       width: 100%;
+   }
+   .products-buy-btn, .products-cart-btn{
+       margin-bottom: 1rem;
+   }
+   .inside-product-flex span:nth-child(3){
+       background-color: gold;
+       padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+       border-radius: 40px;
+   }
+   .inside-product-flex span:nth-child(4){
+       background-color: red;
+       padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+       border-radius: 10px;
+       color: white;
+   }
+   .product-1 label{
+       font-size: 0.8rem;
+   }
+   .product-1 p, .product-2  p, .product-3 p{
+       text-align: center;
+       width: 100%;
+       margin-top: 1rem;
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+       font-size: 1.1rem;
+       line-height: 1.4;
+     
+   
+}
+.products{
+   margin-top: 5rem;
+}
+.products h3{
+   font-size: 2.2rem;
+   margin-top: 3rem;
+   text-align: center;
+   margin-bottom: 2rem;
+   margin-top: 5rem;
+   text-transform: uppercase;
+}
+footer{
+   margin-top: 4rem;
+}
+.footer-container{
+  flex-direction: column;
+   justify-content: space-around;
+   text-align: center;
+}
+footer ul {
+   margin-bottom: 2rem;
+   font-size: 0.6rem;
+   font-weight: 500;
+}
+
+.footer-newsletter{
+   margin-top: 2rem;
+}
+footer .bi-facebook, .bi-linkedin, .bi-twitter, .bi-youtube, .bi-google{
+   border: 2px solid rgb(44, 112, 230);
+   padding: 0.3rem 0.3rem;
+   border-radius: 10px;
+   font-size: 0.9rem;
+   text-align: center;
+   margin-top: 2rem;
+}
+footer h3{
+   color: rgb(62, 62, 62);
+   margin-bottom: 0.5rem;
+   font-size: 1.3rem;
+}
+.icons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem ;
+}
+.icons p{
+   margin-top: 0.8rem;
+}
+.contact ul li{
+   line-height: 3;
+}
+.footer-socials h3{
+   font-size: 1.2rem;
+   color: rgb(62, 62, 62);
+   margin-bottom: 0.5rem;
+   display: block;
+}
+#email-input{
+   width: 50%;
+   height: 3rem;
+   border: 2px solid rgb(44, 112, 230);
+   border-radius: 0;
+   margin-top: 1.4rem;
+   position: relative;
+   top: 0.1rem;
+}
+.footer-submit-btn{
+   border-radius: 0px ;
+   width: 25%;
+   height: 3rem;
+   border: 2px solid rgb(44, 112, 230);
+   background-color: transparent;
+   color: rgb(44, 112, 230);
+   font-size: 0.8rem;
+   position: relative;
+   right: 0.3rem;
+   bottom: 0rem;
+   font-weight: 600;
+   margin-top: 0.6rem;
+   cursor: pointer;
+}
+.footer-submit-btn:hover{
+   background-color: rgb(10, 74, 185);
+   color: white;
+   transition: all .4s ease-in;
+   
+}
+#contact h3{
+   margin-top: 3rem;
+}
+.copyright{
+   background-color: black;
+   color: white;
+   text-align: center;
+   height: 1.5rem;
+   font-size: 0.6rem;
+}
+.quick-links ul{
+   line-height: 3.5rem;
+}
+
+
+.checkbtn{
+   display: block;
+    color: black;
+    margin-left: 36%;
+    height: 0;
+    float: right;
+    margin-top: 0.9rem;
+    cursor: pointer;
+    
+}
+.bi-list{
+   width: 1.8rem;
+}
+.nav-container{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-container ul{
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background: white;
+   top: 4rem;
+   left: 100%;
+   text-align: center;
+   transition: all .5s;
+   margin-right: auto;
+   margin-left: auto;
+
+}
+nav ul li{
+   display: block;
+   margin: 3.73rem 0;
+   padding: 0;
+   margin-top: 5.2rem;
+   line-height: 1.6rem;
+   text-transform: uppercase;
+}
+nav ul li a{
+    font-size: 1rem;
+    color: black;
+    font-weight: 535;
+}
+a:hover,a.active{
+    background: none;
+    color: gray;
+}
+#check:checked~ ul {
+    left: 0;
+}
+
+.customer-child1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+}
+.customer-child1 p{
+   width: 90%;
+   margin-left: 0.8rem;
+   letter-spacing: 3;
+   position: relative;
+   bottom: 2.4rem
+}
+.customer-container h6{
+   position: relative;
+   left: 0rem; 
+   bottom: 2rem; 
+   font-size: 1.4rem;
+   margin-bottom: 2rem;
+   margin-right: 2rem;
+   margin-top: 0;
+   font-weight: 500;
+   text-align: right;
+}
+.quote1, .quote2{
+   width: 4%;
+}
+.customer-pic{
+   width: 23%;
+   position: relative;
+   top: 4rem;
+   margin-bottom: 3rem;
+}
+.customer-container{
+   margin-top: 0rem;
+}
+
+.slider{
+ width: 100%;
+ height: 34.375rem;
+ overflow: hidden;  
+ margin-bottom: 0rem; 
+ margin-top: 5rem;
+}
+.slider h3{
+   font-size: 2rem;
+   text-align: center;
+   margin-top: 1rem;
+}
+.customer-container h6{
+   margin-bottom: 4rem;
+}
+.footer-newsletter .bi-arrow-right{
+   display: none;
+}
+}
+
 @media screen and (max-width:600px){
     html{
          overflow-x: hidden;
